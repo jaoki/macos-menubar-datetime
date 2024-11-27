@@ -20,7 +20,7 @@ fn main() {
 
     let menubar_app = DatetimeMenubarApp::new();
 
-    menubar_app.set_text("🦀rust");
+    menubar_app.set_text("UTC");
     menubar_app.setup_status_bar();
 
     let (tx, rx) = mpsc::channel();

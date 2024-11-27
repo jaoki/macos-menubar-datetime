@@ -44,7 +44,7 @@ impl MenubarUpdateThread {
 
     fn fun_name(&self, text: &String) {
         let utc_now = Utc::now();
-        let time_str = utc_now.format("%H:%M:%S").to_string();
+        let time_str = utc_now.format("UTC %H:%M:%S").to_string();
 
 
         self.button.set_text(&time_str)
